@@ -1,0 +1,20 @@
+# CSE 576 conda environment.
+# Create with:  conda env create -f environment.yaml
+# Then:         conda activate cse576
+#
+# pytorch / torchvision are only needed for HW5 (deep learning); everything
+# else (HW1-HW4) runs on numpy + pillow.
+name: cse576
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy>=2.0
+  - pillow>=11
+  - matplotlib>=3.8
+  - pandas>=2.2
+  - tqdm>=4.65
+  - pytorch>=2.3
+  - torchvision>=0.18
