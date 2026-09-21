@@ -5,7 +5,7 @@ In this repository, you will find instructions on how to build your own image pr
 To get started, make sure you have `git` and Python installed. Then run:
 
 ```
-git clone https://github.com/UW-CSE-576-2026SP/Homework.git
+git clone https://github.com/UW-CSE-576-2026fall/Homework.git
 cd Homework
 ```
 
@@ -55,7 +55,7 @@ conda --version
 ### 2. Clone the repository
 
 ```
-git clone https://github.com/UW-CSE-576-2026SP/Homework.git
+git clone https://github.com/UW-CSE-576-2026fall/Homework.git
 cd Homework
 ```
 
