@@ -84,7 +84,7 @@ python -m src.main test hw1
 
 The HW1 tests should run and pass. (Extra-credit tests may fail until you implement those
 functions — that's expected.) If you get import errors, re-check step 4: your prompt
-should show `(cse576)`.
+should show `(cse455)`.
 
 ### Updating later
 
