@@ -68,7 +68,7 @@ stable connection. The solve can take several minutes.
 ### 4. Activate the environment
 
 ```
-conda activate cse576
+conda activate cse455
 ```
 
 > **Important — do this in every new terminal.** You must run `conda activate cse576`
