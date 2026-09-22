@@ -1,11 +1,11 @@
-# Welcome to CSE 576, 2026 Spring
+# Welcome to CSE 455, 2026 Autumn
 
 In this repository, you will find instructions on how to build your own image processing/computer vision library from (mostly) scratch. The work is divided out into different homework assignments, found in the `src/` directory.
 
 To get started, make sure you have `git` and Python installed. Then run:
 
 ```
-git clone https://github.com/UW-CSE-576-2026fall/Homework.git
+git clone https://github.com/UW-CSE-455-2026fall/Homework.git
 cd Homework
 ```
 
@@ -14,13 +14,6 @@ and check to see that everything runs correctly. We recommend using Linux or Mac
 ## Due Dates
 ** HW1 is due on April 13 (11:59 pm).**
 
-** HW2 is due on April 24 (11:59 pm).**
-
-** HW3 is due on May 12 (11:59 pm).**
-
-** HW4 is due on May 19 (11:59 pm).**
-
-** HW5 is due on May 27 (11:59 pm).**
 
 ## Get started on HW1
 
@@ -55,7 +48,7 @@ conda --version
 ### 2. Clone the repository
 
 ```
-git clone https://github.com/UW-CSE-576-2026fall/Homework.git
+git clone https://github.com/UW-CSE-455-2026fall/Homework.git
 cd Homework
 ```
 
@@ -67,7 +60,7 @@ From the repo directory (the one containing `environment.yaml`):
 conda env create -f environment.yaml
 ```
 
-This creates an environment named **`cse576`** with Python 3.11, NumPy, Pillow,
+This creates an environment named **`cse455`** with Python 3.11, NumPy, Pillow,
 Matplotlib, pandas, tqdm, and PyTorch/torchvision. PyTorch is only used in HW5, but it is
 the largest download — expect to pull **~5 GB**, so make sure you have the space and a
 stable connection. The solve can take several minutes.
@@ -81,7 +74,7 @@ conda activate cse576
 > **Important — do this in every new terminal.** You must run `conda activate cse576`
 > before running any homework code or tests. If you skip it, you'll be using your *base*
 > Python (a different, often older set of packages), which can make tests fail for no real
-> reason. When the environment is active your prompt shows `(cse576)`.
+> reason. When the environment is active your prompt shows `(cse455)`.
 
 ### 5. Verify it works
 
