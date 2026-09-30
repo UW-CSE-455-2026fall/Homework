@@ -12,7 +12,7 @@ cd Homework
 and check to see that everything runs correctly. We recommend using Linux or MacOS for the homework for a smoother setup.
 
 ## Due Dates
-** HW1 is due on April 13 (11:59 pm).**
+** HW1 is due on October 15 (11:59 pm).**
 
 
 ## Get started on HW1
