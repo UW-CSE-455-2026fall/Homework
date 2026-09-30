@@ -1,4 +1,4 @@
-# CSE 576 Homework 1 (Python) #
+# CSE 455 Homework 1 (Python) #
 
 Welcome. For the first assignment, you'll get familiar with the codebase and practice image manipulation in Python.
 
