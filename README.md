@@ -71,7 +71,7 @@ stable connection. The solve can take several minutes.
 conda activate cse455
 ```
 
-> **Important — do this in every new terminal.** You must run `conda activate cse576`
+> **Important — do this in every new terminal.** You must run `conda activate cse455`
 > before running any homework code or tests. If you skip it, you'll be using your *base*
 > Python (a different, often older set of packages), which can make tests fail for no real
 > reason. When the environment is active your prompt shows `(cse455)`.
