@@ -4,7 +4,7 @@
 #
 # pytorch / torchvision are only needed for HW5 (deep learning); everything
 # else (HW1-HW4) runs on numpy + pillow.
-name: cse576
+name: cse455
 channels:
   - pytorch
   - conda-forge
