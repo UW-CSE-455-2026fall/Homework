@@ -1,4 +1,4 @@
-# CSE 576 Homework 2 #
+# CSE 455 Homework 2 #
 
 Welcome, it's time for homework 2! This one may be a little harder than the last one so remember to start early! In order to make grading easier, please only edit the files we mention to submit. You will submit the `src/hw2/modify_image.py` file on Canvas.
 
