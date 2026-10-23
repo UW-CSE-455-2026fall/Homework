@@ -13,7 +13,11 @@ and check to see that everything runs correctly. We recommend using Linux or Mac
 
 ## Due Dates
 ** HW1 is due on October 15 (11:59 pm).**
+
 ** HW2 is due on October 27 (11:59 pm).**
+
+** HW3 is due on November 12 (11:59 pm).**
+
 
 ## Get started on HW1
 
