@@ -166,14 +166,14 @@ Small                     | Large
 For this task you'll have to extract the high frequency and low frequency from some images. You already know how to get low frequency, using your gaussian filter. To get high frequency you just subtract the low frequency data from the original image. You will probably need different values for each image to get it to look good.
 
 #### TO DO ####
-Fill in `def add_image(a: Image, b: Image) -> Image:` to add two images a and b and `def sub_image(a: Image, b: Image) -> Image:` to subtract image b from image a, so that we can perform our transformations of `+` and `-` like this:
+Fill in `def add_image(a: Image, b: Image) -> Image:` to add two images a and b and `def sub_image(a: Image, b: Image) -> Image:` to subtract image b from image a, so that we can perform these transformations by calling the functions like this:
 
 ```
 im = load_image("data/dog.jpg")
 f = make_gaussian_filter(2)
 lfreq = convolve_image(im, f, 1)
-hfreq = im - lfreq
-reconstruct = lfreq + hfreq
+hfreq = sub_image(im, lfreq)
+reconstruct = add_image(lfreq, hfreq)
 save_image(lfreq, "low-frequency")
 save_image(hfreq, "high-frequency")
 save_image(reconstruct, "reconstruct")

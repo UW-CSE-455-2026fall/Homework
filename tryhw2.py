@@ -32,8 +32,8 @@ save_image(blur, "dog-gauss2")
 im = load_image("data/dog.jpg")
 f = make_gaussian_filter(2)
 lfreq = convolve_image(im, f, 1)
-hfreq = im - lfreq
-reconstruct = lfreq + hfreq
+hfreq = sub_image(im, lfreq)
+reconstruct = add_image(lfreq, hfreq)
 save_image(lfreq, "low-frequency")
 save_image(hfreq, "high-frequency")
 save_image(reconstruct, "reconstruct")
