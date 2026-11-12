@@ -18,6 +18,7 @@ and check to see that everything runs correctly. We recommend using Linux or Mac
 
 ** HW3 is due on November 12 (11:59 pm).**
 
+** HW4 is due on November 19 (11:59 pm).**
 
 ## Get started on HW1
 
