@@ -141,17 +141,16 @@ Our training code to implement SGD. First we get a random subset of the data usi
 
 ## 2. Experiments with MNIST ##
 
-We'll be testing out your implementation on the [MNIST dataset](http://yann.lecun.com/exdb/mnist/)! The training images can be found [here](https://pjreddie.com/media/files/mnist_train.tar.gz) and the test images are [here](https://pjreddie.com/media/files/mnist_test.tar.gz). They are preprocessed for you into PNG format. To get the data you can run:
+Download the [MNIST PNG dataset from Kaggle](https://www.kaggle.com/datasets/ben519/mnist-as-png) and extract it into the repository root (the folder containing `tryhw4.py`). The extracted `mnist-png` directory should contain `train` and `test`.
 
-    wget https://pjreddie.com/media/files/mnist_train.tar.gz
-    wget https://pjreddie.com/media/files/mnist_test.tar.gz
-    tar xzf mnist_train.tar.gz
-    tar xzf mnist_test.tar.gz
+From the repository root, use Bash to generate the image lists:
 
-We'll also need a list of the images in our training and test set. To do this you can run:
+```bash
+find mnist-png/train -type f -name '*.png' > mnist.train
+find mnist-png/test -type f -name '*.png' > mnist.test
+```
 
-    find train -name \*.png > mnist.train
-    find test -name \*.png > mnist.test
+Run `python tryhw4.py` from the same directory so it can find both the lists and the image paths they contain.
 
 Answer the questions in this section in a document which you later need to convert to a PDF and submit as `hw4.pdf`. Answers can be short, 1-2 sentences.
 
@@ -195,18 +194,20 @@ Modify your model so it has 3 layers instead of two. The layers should be `input
 
 ## 3. Experiments with CIFAR ##
 
-The [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset is meant to be similar to MNIST but much more challenging. Using the same model we just created, let's try training on CIFAR. We have to do a similar process as last time, getting the data and creating files to hold the paths. Run:
+Download the [CIFAR-10 PNG dataset from Kaggle](https://www.kaggle.com/datasets/swaroopkml/cifar10-pngs-in-folders) and extract it into the repository root. Keep both levels of the `cifar10` directory so the image folders are at `cifar10/cifar10/train` and `cifar10/cifar10/test`.
 
-    wget http://pjreddie.com/media/files/cifar.tgz
-    tar xzf cifar.tgz
-    find cifar/train -name \*.png > cifar.train
-    find cifar/test -name \*.png > cifar.test
+From the repository root, use Bash to generate the image lists:
 
-Notice that the file of possible labels can be found in `cifar/labels.txt`.
+```bash
+find cifar10/cifar10/train -type f -name '*.png' > cifar.train
+find cifar10/cifar10/test -type f -name '*.png' > cifar.test
+```
+
+The loader uses each image's parent directory as its class label.
 
 ### 3.1 Train on CIFAR ###
 
-Modify `tryhw4.py` to use CIFAR. This should mostly involve swapping out references to `mnist` with `cifar` during dataset loading. Then train the neural network model (3 layers) with CIFAR. You may have to fiddle with the learning rate to get it to train well.
+Change the image-list arguments in `tryhw4.py` to `cifar.train` and `cifar.test`. Run the script from the repository root to train your 3-layer neural network on CIFAR. You may have to fiddle with the learning rate to get it to train well.
 
 #### 3.1.1 Question ####
 
