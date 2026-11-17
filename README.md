@@ -70,6 +70,14 @@ Matplotlib, pandas, tqdm, and PyTorch/torchvision. PyTorch is only used in HW5, 
 the largest download — expect to pull **~5 GB**, so make sure you have the space and a
 stable connection. The solve can take several minutes.
 
+> **Windows only:** run this once right after creating the environment. Without it,
+> `import torch` fails with `OSError: [WinError 182] ... fbgemm.dll` (conda installs an
+> OpenMP library that is too new for this PyTorch build):
+>
+> ```
+> conda install -n cse455 -c pytorch -c conda-forge "intel-openmp<2025" "mkl<2025"
+> ```
+
 ### 4. Activate the environment
 
 ```
