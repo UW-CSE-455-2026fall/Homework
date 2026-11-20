@@ -20,6 +20,8 @@ and check to see that everything runs correctly. We recommend using Linux or Mac
 
 ** HW4 is due on November 19 (11:59 pm).**
 
+** HW5 is due on December 1 (11:59 pm).**
+
 ## Get started on HW1
 
 Open up the README for homework 1 in src/hw1/README.md, or view it [here](src/hw1/README.md). Good luck and have fun!
